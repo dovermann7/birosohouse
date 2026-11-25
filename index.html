@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>비로소하우스 | 혼자 와서, 둘이 되어 나가는 연남동 소셜 다이닝</title>
+  <meta name="description" content="함께 장 보고, 같이 칼질하고, 한 상 차려서 나눠 먹는 동안 자연스럽게 정드는 연남동 소셜 다이닝 커뮤니티, 비로소하우스." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand-logo" aria-label="비로소하우스 홈">
+        <span class="brand-en">BIROSO HOUSE</span>
+        <span class="brand-ko">비로소하우스</span>
+      </a>
+
+      <nav class="nav-links" aria-label="주요 메뉴">
+        <a href="#brand-film">30초 브랜드 필름</a>
+        <a href="#story">브랜드 스토리</a>
+        <a href="#programs">프로그램</a>
+        <a href="#journey">진행 방식</a>
+        <a href="#youtube">유튜브 &amp; 현장</a>
+        <a href="#location">오시는 길</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-primary open-apply-modal" type="button">모임 신청하기</button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="메뉴 열기" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#brand-film">30초 브랜드 필름</a>
+      <a href="#story">브랜드 스토리</a>
+      <a href="#programs">프로그램</a>
+      <a href="#journey">진행 방식</a>
+      <a href="#youtube">유튜브 &amp; 현장</a>
+      <a href="#location">오시는 길</a>
+      <a href="#faq">FAQ</a>
+      <button class="btn btn-primary open-apply-modal" type="button">모임 신청하기</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">연남동 소셜 다이닝 &amp; 싱글 커뮤니티</div>
+          <h1 class="hero-title">
+            혼자 와서,<br />
+            <em>둘이 되어</em> 나가는 곳
+          </h1>
+          <p class="hero-subtitle">
+            함께 장 보고, 같이 칼질하고, 한 상 차려서 나눠 먹는 동안<br class="hide-mobile" />
+            초면이라는 어색함은 자연스럽게 사라지고,<br class="hide-mobile" />
+            어느새 옆자리 사람과 정들어 있을 거예요.
+          </p>
+          <p class="hero-note">
+            낯가리는 사람도, 연애 프로그램 좋아하는 사람도, 새로운 인연이 궁금한 사람도 — 모두 환영합니다.
+          </p>
+          <div class="hero-cta-group">
+            <button class="btn btn-primary btn-lg open-apply-modal" type="button">
+              이번 기수 신청하기
+            </button>
+            <a href="#brand-film" class="btn btn-outline btn-lg">
+              ▶ 30초 광고 영상 보기
+            </a>
+            <a href="https://www.youtube.com/@Birosohouse" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+              @Birosohouse
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <strong>기수제 운영</strong>
+              <span>연령대별 맞춤 매칭</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <strong>쿠킹 &amp; 와인</strong>
+              <span>어색함 제로 아이스브레이킹</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <strong>연남동 4F</strong>
+              <span>프라이빗 다이닝 하우스</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img id="heroImg" src="assets/hero-dining.jpg" alt="비로소하우스 연남동 소셜 다이닝 테이블 분위기" class="hero-img" />
+            <div class="floating-card">
+              <span class="floating-dot"></span>
+              <div>
+                <strong>현재 신규 기수 모집 중</strong>
+                <p>90~99년생 / 95~99년생 소셜 다이닝</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Film Section (30s Ad Video) -->
+    <section class="section film-section" id="brand-film">
+      <div class="container film-grid">
+        <div class="film-player-wrap">
+          <div class="film-frame">
+            <span class="film-tag">30s BRAND FILM</span>
+            <video
+              class="brand-video"
+              controls
+              playsinline
+              preload="metadata"
+              poster="assets/hero-dining.jpg"
+            >
+              <source src="assets/birosohouse-ad.mp4" type="video/mp4" />
+              브라우저가 HTML5 비디오 재생을 지원하지 않습니다.
+            </video>
+          </div>
+        </div>
+
+        <div class="film-copy">
+          <span class="section-tag">BIROSO HOUSE IN 30 SECONDS</span>
+          <h2 class="section-title">글보다 먼저 전해지는<br />비로소하우스의 온기</h2>
+          <p class="film-desc">
+            처음 만나는 사람들과 함께 장을 보고, 웃으며 요리를 준비하고, 따뜻한 조명 아래 한 상을 나누는 30초의 기록입니다.
+          </p>
+          <p class="film-desc">
+            어색한 침묵 대신 자연스러운 눈맞춤과 대화가 흐르는 연남동의 밤을 영상으로 먼저 만나보세요.
+          </p>
+          <div class="film-actions">
+            <button class="btn btn-primary open-apply-modal" type="button">영상 속 모임 신청하기</button>
+            <a href="#programs" class="btn btn-outline">프로그램 자세히 보기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Story Section -->
+    <section class="section story-section" id="story">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">WHY BIROSO HOUSE</span>
+          <h2 class="section-title">어색한 소개팅 대신,<br />한 끼의 온기로 가까워지는 시간</h2>
+          <p class="section-desc">
+            딱딱한 1:1 마주 앉기에서 벗어나, 요리와 대화라는 자연스러운 흐름 속에서<br class="hide-mobile" />
+            상대방의 진짜 매력과 결을 발견할 수 있도록 공간을 설계했습니다.
+          </p>
+        </div>
+
+        <div class="story-grid">
+          <article class="story-card">
+            <div class="story-icon">🛒</div>
+            <h3>함께 장보고 요리하는 설렘</h3>
+            <p>
+              재료를 고르고 나란히 서서 칼질하며 웃다 보면, 처음 만났다는 긴장감은 눈 녹듯 사라집니다. 요리를 못해도 호스트의 가이드로 누구나 근사한 한 상을 완성해요.
+            </p>
+          </article>
+
+          <article class="story-card">
+            <div class="story-icon">🍷</div>
+            <h3>연애 프로그램 같은 몰입감</h3>
+            <p>
+              대화 카드, 자리 로테이션, 그리고 은근한 시그널까지. 낯을 많이 가리는 분들도 자연스럽게 이야기에 스며들 수 있도록 섬세하게 분위기를 이끕니다.
+            </p>
+          </article>
+
+          <article class="story-card">
+            <div class="story-icon">🏡</div>
+            <h3>한 번으로 끝나지 않는 인연</h3>
+            <p>
+              단발성 모임이 아닌 기수제 멤버십으로 운영됩니다. 모임 이후에도 월 1회 전체 기수 파티, 바비큐 나잇, 매칭 트립을 통해 꾸준히 인연을 이어갑니다.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="section programs-section" id="programs">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">PROGRAMS</span>
+          <h2 class="section-title">취향과 분위기에 맞춰 고르는<br />비로소하우스의 4가지 모임</h2>
+        </div>
+
+        <div class="program-tabs" role="tablist" aria-label="프로그램 선택">
+          <button class="tab-btn active" data-tab="cooking" role="tab" aria-selected="true">쿠킹 소셜 다이닝</button>
+          <button class="tab-btn" data-tab="chef" role="tab" aria-selected="false">셰프 코스 &amp; 와인</button>
+          <button class="tab-btn" data-tab="trip" role="tab" aria-selected="false">비로소 매칭 트립</button>
+          <button class="tab-btn" data-tab="party" role="tab" aria-selected="false">전체 기수 파티</button>
+        </div>
+
+        <div class="program-panel-wrap">
+          <!-- Cooking -->
+          <div class="program-panel active" id="panel-cooking" role="tabpanel">
+            <div class="program-media">
+              <img id="cookingImg" src="assets/cooking-together.jpg" alt="함께 요리하는 비로소하우스 소셜 다이닝" />
+            </div>
+            <div class="program-info">
+              <span class="program-badge">SIGNATURE · 가장 인기</span>
+              <h3>쿠킹 소셜 다이닝</h3>
+              <p class="program-lead">
+                "함께 장 보고, 같이 칼질하고, 한 상 차려서 나눠 먹는 비로소의 오리지널 프로그램"
+              </p>
+              <ul class="program-list">
+                <li><strong>인원 구성:</strong> 성비 1:1 맞춤 (보통 남 4 : 여 4 또는 5:5)</li>
+                <li><strong>소요 시간:</strong> 약 3시간 30분 (장보기 · 쿠킹 · 식사 &amp; 와인)</li>
+                <li><strong>추천 대상:</strong> 어색한 대화가 부담스럽고 자연스러운 스킨십과 협동을 원하는 분</li>
+              </ul>
+              <button class="btn btn-primary open-apply-modal" data-program="쿠킹 소셜 다이닝" type="button">
+                쿠킹 다이닝 신청하기
+              </button>
+            </div>
+          </div>
+
+          <!-- Chef Course -->
+          <div class="program-panel" id="panel-chef" role="tabpanel">
+            <div class="program-media">
+              <div class="media-placeholder chef-bg">
+                <div class="placeholder-inner">
+                  <span>🍽️</span>
+                  <strong>CHEF COURSE &amp; WINE</strong>
+                  <p>요리 부담 없이 온전히 대화와 눈맞춤에 집중하는 밤</p>
+                </div>
+              </div>
+            </div>
+            <div class="program-info">
+              <span class="program-badge">RELAXED · 깊은 대화</span>
+              <h3>셰프 코스 소개팅 &amp; 와인 나잇</h3>
+              <p class="program-lead">
+                "정성스레 준비된 코스 요리와 페어링 와인을 곁들이며 깊은 이야기를 나누는 프리미엄 다이닝"
+              </p>
+              <ul class="program-list">
+                <li><strong>인원 구성:</strong> 연령대별 기수 매칭 (예: 90~95년생, 95~99년생)</li>
+                <li><strong>진행 포인트:</strong> 테이블 로테이션 &amp; 비로소 시그니처 질문 카드</li>
+                <li><strong>추천 대상:</strong> 요리보다는 차분하고 밀도 높은 대화를 선호하는 분</li>
+              </ul>
+              <button class="btn btn-primary open-apply-modal" data-program="셰프 코스 &amp; 와인" type="button">
+                셰프 코스 신청하기
+              </button>
+            </div>
+          </div>
+
+          <!-- Matching Trip -->
+          <div class="program-panel" id="panel-trip" role="tabpanel">
+            <div class="program-media">
+              <div class="media-placeholder trip-bg">
+                <div class="placeholder-inner">
+                  <span>✨</span>
+                  <strong>BIROSO MATCHING TRIP</strong>
+                  <p>현실판 연애 프로그램, 하루 이상의 깊은 여정</p>
+                </div>
+              </div>
+            </div>
+            <div class="program-info">
+              <span class="program-badge">SPECIAL · 큐레이션</span>
+              <h3>비로소 매칭 트립</h3>
+              <p class="program-lead">
+                "신청서와 기존 모임 활동 데이터를 바탕으로 어울리는 상대를 정교하게 큐레이션하는 특별 프로그램"
+              </p>
+              <ul class="program-list">
+                <li><strong>선발 방식:</strong> 사전 신청서 및 가치관·성향 큐레이션</li>
+                <li><strong>핵심 매력:</strong> 데이트 미션, 호감 투표, 1:1 티타임 등 입체적 교류</li>
+                <li><strong>추천 대상:</strong> 진정성 있는 만남과 잊지 못할 추억을 만들고 싶은 분</li>
+              </ul>
+              <button class="btn btn-primary open-apply-modal" data-program="비로소 매칭 트립" type="button">
+                매칭 트립 문의하기
+              </button>
+            </div>
+          </div>
+
+          <!-- All Party -->
+          <div class="program-panel" id="panel-party" role="tabpanel">
+            <div class="program-media">
+              <div class="media-placeholder party-bg">
+                <div class="placeholder-inner">
+                  <span>🥂</span>
+                  <strong>MONTHLY ALL PARTY</strong>
+                  <p>기수를 넘어 모두가 어우러지는 연남동의 밤</p>
+                </div>
+              </div>
+            </div>
+            <div class="program-info">
+              <span class="program-badge">MEMBERSHIP · 월 1회</span>
+              <h3>전체 기수 파티 &amp; 바비큐</h3>
+              <p class="program-lead">
+                "비로소하우스 멤버가 되면 매월 열리는 전체 기수 파티와 시즌 바비큐 모임에 초대됩니다"
+              </p>
+              <ul class="program-list">
+                <li><strong>참여 대상:</strong> 비로소하우스 기수 수료 멤버 및 지인 동반</li>
+                <li><strong>분위기:</strong> 자유로운 스탠딩 와인 파티, 미니 게임, 네트워킹</li>
+                <li><strong>추천 대상:</strong> 좋은 사람들과 건강한 커뮤니티를 넓혀가고 싶은 분</li>
+              </ul>
+              <button class="btn btn-primary open-apply-modal" data-program="전체 기수 파티" type="button">
+                멤버십 안내받기
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works / Journey -->
+    <section class="section journey-section" id="journey">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">HOW IT WORKS</span>
+          <h2 class="section-title">비로소하우스의 하루는 이렇게 흘러갑니다</h2>
+          <p class="section-desc">처음 오시는 분도 긴장하지 않도록 시작부터 마무리까지 호스트가 함께합니다.</p>
+        </div>
+
+        <div class="journey-timeline">
+          <div class="journey-step">
+            <div class="step-num">01</div>
+            <h4>신청 및 기수 매칭</h4>
+            <p>간단한 프로필과 성향을 작성하면 나이대와 분위기가 맞는 기수로 배정됩니다.</p>
+          </div>
+          <div class="journey-step">
+            <div class="step-num">02</div>
+            <h4>웰컴 드링크 &amp; 인사</h4>
+            <p>연남동 4층 아지트에 모여 가벼운 웰컴 드링크와 함께 첫인사를 나눕니다.</p>
+          </div>
+          <div class="journey-step">
+            <div class="step-num">03</div>
+            <h4>함께 장보기 &amp; 쿠킹</h4>
+            <p>파트너와 함께 장을 보고, 앞치마를 두른 채 웃으며 요리를 완성해 갑니다.</p>
+          </div>
+          <div class="journey-step">
+            <div class="step-num">04</div>
+            <h4>한 상 식사 &amp; 대화 카드</h4>
+            <p>직접 만든 음식을 나누며, 어색함을 깨는 시그니처 질문으로 서로를 알아갑니다.</p>
+          </div>
+          <div class="journey-step">
+            <div class="step-num">05</div>
+            <h4>설레는 선택 &amp; 커뮤니티</h4>
+            <p>마음이 통하는 분과의 매칭 결과 안내 후, 기수 커뮤니티로 인연이 이어집니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- YouTube & Sketch Section -->
+    <section class="section youtube-section" id="youtube">
+      <div class="container">
+        <div class="youtube-header">
+          <div>
+            <span class="section-tag">YOUTUBE @BIROSOHOUSE</span>
+            <h2 class="section-title">영상으로 먼저 만나는<br />비로소하우스의 공기</h2>
+          </div>
+          <a href="https://www.youtube.com/@Birosohouse" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            채널 전체 영상 보러가기 ↗
+          </a>
+        </div>
+
+        <div class="video-grid">
+          <a href="https://www.youtube.com/@Birosohouse/shorts" target="_blank" rel="noopener noreferrer" class="video-card">
+            <div class="video-thumb thumb-1">
+              <span class="play-badge">▶ SHORTS</span>
+              <span class="duration-badge">0:58</span>
+            </div>
+            <div class="video-meta">
+              <h4>함께 장 보고 요리하다 눈 맞은 썰</h4>
+              <p>초면의 어색함이 사라지는 마법의 3시간 스케치</p>
+            </div>
+          </a>
+
+          <a href="https://www.youtube.com/@Birosohouse/shorts" target="_blank" rel="noopener noreferrer" class="video-card">
+            <div class="video-thumb thumb-2">
+              <span class="play-badge">▶ SHORTS</span>
+              <span class="duration-badge">0:45</span>
+            </div>
+            <div class="video-meta">
+              <h4>낯가리는 내향인(I)도 괜찮을까?</h4>
+              <p>호스트가 직접 말아주는 자연스러운 대화의 기술</p>
+            </div>
+          </a>
+
+          <a href="https://www.youtube.com/@Birosohouse/videos" target="_blank" rel="noopener noreferrer" class="video-card">
+            <div class="video-thumb thumb-3">
+              <span class="play-badge">▶ VIDEO</span>
+              <span class="duration-badge">4:12</span>
+            </div>
+            <div class="video-meta">
+              <h4>연남동 비로소하우스 공간 &amp; 파티 브이로그</h4>
+              <p>따뜻한 조명 아래 와인 한 잔, 그리고 새로운 인연들</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Official Links -->
+    <section class="section location-section" id="location">
+      <div class="container location-grid">
+        <div class="location-info">
+          <span class="section-tag">LOCATION &amp; CONTACT</span>
+          <h2 class="section-title">연남동의 따뜻한 아지트에서<br />기다리고 있을게요</h2>
+          <div class="info-list">
+            <div class="info-row">
+              <strong>주소</strong>
+              <span>서울특별시 마포구 동교로30길 19, 4층 (연남동)</span>
+            </div>
+            <div class="info-row">
+              <strong>대중교통</strong>
+              <span>홍대입구역 3번 출구 도보 약 7분 (연트럴파크 인근)</span>
+            </div>
+            <div class="info-row">
+              <strong>공식 채널</strong>
+              <span class="channel-links">
+                <a href="https://www.youtube.com/@Birosohouse" target="_blank" rel="noopener noreferrer">YouTube @Birosohouse</a>
+                <span>·</span>
+                <a href="https://litt.ly/birosohouse" target="_blank" rel="noopener noreferrer">Litt.ly 안내 페이지</a>
+              </span>
+            </div>
+          </div>
+          <div class="location-cta">
+            <a href="https://litt.ly/birosohouse" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              공식 신청 링크(Litt.ly) 열기 ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="location-card">
+          <div class="map-art">
+            <div class="map-pin">📍</div>
+            <h4>BIROSO HOUSE · 연남동</h4>
+            <p>마포구 동교로30길 19, 4층</p>
+            <span class="map-badge">프라이빗 소셜 다이닝 공간</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="section-header center">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title">자주 묻는 질문</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>정말 혼자 가도 어색하지 않을까요?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>대부분의 참가자분들이 혼자 오십니다! 도착 직후 호스트의 웰컴 아이스브레이킹과 함께 장보기·요리 미션이 자연스럽게 이어지기 때문에, 낯을 많이 가리시는 분들도 금세 편하게 대화를 나누실 수 있습니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>요리를 전혀 못하는데 참여해도 되나요?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>물론입니다. 화려한 요리 실력을 뽐내는 자리가 아니라, 함께 재료를 다듬고 플레이팅하며 이야기를 나누는 과정이 핵심입니다. 레시피와 도구가 모두 준비되어 있고 호스트가 옆에서 도와드립니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>모집 나이대나 기수는 어떻게 나뉘나요?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>회차 및 기수마다 조금씩 다르지만, 주로 90~99년생, 95~99년생 등 비슷한 연령대와 라이프스타일을 가진 분들끼리 매칭하여 편안한 공감대가 형성되도록 운영하고 있습니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>모임이 끝난 후에는 어떻게 이어지나요?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>모임 종료 후 비밀 호감 투표를 통해 매칭 결과를 개별 안내해 드립니다. 또한 비로소하우스 기수 멤버로서 월 1회 전체 기수 파티나 바비큐 모임 등 다양한 커뮤니티 이벤트에도 참여하실 수 있습니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA Banner -->
+    <section class="bottom-cta">
+      <div class="container bottom-cta-inner">
+        <h2>오늘 저녁, 누군가와 함께<br />따뜻한 한 상을 차려볼까요?</h2>
+        <p>혼자 왔다 둘로 되어 나갈 수 있는 곳, 연남동 비로소하우스가 기다립니다.</p>
+        <button class="btn btn-light btn-lg open-apply-modal" type="button">지금 바로 신청서 작성하기</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>BIROSO HOUSE · 비로소하우스</strong>
+        <p>서울특별시 마포구 동교로30길 19, 4층 (연남동)</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.youtube.com/@Birosohouse" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://litt.ly/birosohouse" target="_blank" rel="noopener noreferrer">Litt.ly</a>
+      </div>
+    </div>
+    <div class="container footer-copy">
+      <p>© 2026 BIROSO HOUSE. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Application Modal -->
+  <div class="modal-backdrop" id="applyModal" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeModalBtn" type="button" aria-label="닫기">&times;</button>
+      <div id="modalFormWrap">
+        <span class="section-tag">APPLICATION</span>
+        <h3 id="modalTitle">비로소하우스 기수 신청</h3>
+        <p class="modal-desc">아래 정보를 입력해 주시면 기수 일정에 맞춰 안내해 드립니다.</p>
+        <form id="applyForm" class="apply-form">
+          <div class="form-row">
+            <label for="applicantName">이름 (또는 닉네임)</label>
+            <input id="applicantName" type="text" placeholder="예: 김비로" required />
+          </div>
+          <div class="form-grid-2">
+            <div class="form-row">
+              <label for="applicantYear">출생연도</label>
+              <input id="applicantYear" type="number" min="1980" max="2006" placeholder="예: 1995" required />
+            </div>
+            <div class="form-row">
+              <label for="applicantGender">성별</label>
+              <select id="applicantGender" required>
+                <option value="">선택</option>
+                <option value="여성">여성</option>
+                <option value="남성">남성</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="applicantProgram">희망 프로그램</label>
+            <select id="applicantProgram" required>
+              <option value="쿠킹 소셜 다이닝">쿠킹 소셜 다이닝</option>
+              <option value="셰프 코스 & 와인">셰프 코스 &amp; 와인</option>
+              <option value="비로소 매칭 트립">비로소 매칭 트립</option>
+              <option value="전체 기수 파티">전체 기수 파티</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="applicantContact">연락처 (카카오톡 ID 또는 휴대폰 번호)</label>
+            <input id="applicantContact" type="text" placeholder="예: 010-0000-0000" required />
+          </div>
+          <div class="form-row">
+            <label for="applicantIntro">간단한 자기소개 &amp; 기대하는 점</label>
+            <textarea id="applicantIntro" rows="3" placeholder="취미, 직업, 어떤 인연을 만나고 싶은지 편하게 적어주세요."></textarea>
+          </div>
+          <button class="btn btn-primary btn-full" type="submit">신청서 접수하기</button>
+        </form>
+      </div>
+
+      <div id="modalSuccessWrap" class="modal-success" hidden>
+        <div class="success-icon">🥂</div>
+        <h3>신청이 접수되었습니다!</h3>
+        <p id="successSummary"></p>
+        <p class="success-note">실제 공식 접수 및 실시간 잔여석 확인은 비로소하우스 공식 신청 페이지에서도 확인하실 수 있습니다.</p>
+        <div class="success-actions">
+          <a href="https://litt.ly/birosohouse" target="_blank" rel="noopener noreferrer" class="btn btn-outline">공식 Litt.ly 바로가기 ↗</a>
+          <button class="btn btn-primary" id="doneModalBtn" type="button">확인</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
